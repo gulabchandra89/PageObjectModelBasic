@@ -8,7 +8,7 @@ import crmAccounts.AccountsPage;
 
 public class TopMenu {
 	
-	
+// adding this comments to for some experiment need to remove it later on 	
 	
 	
 public void goToContacts()
