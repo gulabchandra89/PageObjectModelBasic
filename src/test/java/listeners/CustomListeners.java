@@ -16,7 +16,7 @@ public class CustomListeners extends Page implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
 		test= rep.startTest(result.getName().toUpperCase());
-		//System.out.println(TestUtil.isSuiteRunnable(result.getName(), excelReader));
+		
 		
 	}
 
@@ -31,7 +31,7 @@ public class CustomListeners extends Page implements ITestListener{
 		  
 		 System.setProperty("org.uncommons.reportng.escape-output", "false");// required to set flag 
 		 try {
-			TestUtil.captureScreenshot();
+			Utility.captureScreenshot();
 		} catch (IOException e) {
 			
 			e.printStackTrace();
